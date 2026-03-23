@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XOCHIQUETZALI - Confirmación de Cita</title>
+  <meta name="description" content="Gracias por agendar tu cita con XOCHIQUETZALI. Estética médica natural y segura.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '4475803265984362');
+    fbq('track', 'PageView');
+    fbq('track', 'Lead');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=4475803265984362&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
+  
+  <style>
+    /* Reset & Base */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    :root {
+      --color-cream: #F9F5F2;
+      --color-charcoal: #5C5043;
+      --color-taupe: #A89F94;
+      --color-pink: #D991A7;
+      --color-sage: #7A9A7C;
+      --color-bronze: #C4B7A6;
+    }
+    
+    html {
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    
+    body {
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      background-color: var(--color-cream);
+      color: var(--color-charcoal);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      line-height: 1.6;
+    }
+    
+    /* Card Container */
+    .card {
+      width: 100%;
+      max-width: 32rem;
+      background-color: rgba(255, 255, 255, 0.7);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border-radius: 1rem;
+      box-shadow: 0 4px 24px rgba(92, 80, 67, 0.08);
+      padding: 2.5rem 2rem;
+      text-align: center;
+    }
+    
+    @media (min-width: 640px) {
+      .card {
+        padding: 3rem 2.5rem;
+      }
+    }
+    
+    /* Logo */
+    .logo-container {
+      margin-bottom: 2rem;
+    }
+    
+    .logo {
+      max-height: 3rem;
+      width: auto;
+      object-fit: contain;
+    }
+    
+    @media (min-width: 640px) {
+      .logo {
+        max-height: 3.5rem;
+      }
+    }
+    
+    /* Flower Icon */
+    .flower-icon {
+      width: 2.5rem;
+      height: 2.5rem;
+      margin: 0 auto 1.5rem;
+      color: var(--color-pink);
+      opacity: 0.8;
+    }
+    
+    /* Heading */
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 300;
+      font-size: 1.875rem;
+      color: var(--color-charcoal);
+      margin-bottom: 1rem;
+      line-height: 1.3;
+    }
+    
+    @media (min-width: 640px) {
+      h1 {
+        font-size: 2.25rem;
+      }
+    }
+    
+    /* Divider */
+    .divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    
+    .divider-line {
+      height: 1px;
+      width: 3rem;
+      background: linear-gradient(to right, var(--color-sage), var(--color-bronze));
+      opacity: 0.5;
+    }
+    
+    .divider-dot {
+      width: 0.375rem;
+      height: 0.375rem;
+      border-radius: 50%;
+      background-color: var(--color-pink);
+      opacity: 0.6;
+    }
+    
+    /* Body Text */
+    .body-text {
+      color: var(--color-taupe);
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 0.75rem;
+    }
+    
+    @media (min-width: 640px) {
+      .body-text {
+        font-size: 1.0625rem;
+      }
+    }
+    
+    /* Contact Info Box */
+    .contact-box {
+      background-color: rgba(249, 245, 242, 0.8);
+      border-radius: 0.5rem;
+      padding: 1.25rem;
+      margin-top: 1.5rem;
+    }
+    
+    .contact-label {
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--color-taupe);
+      margin-bottom: 0.5rem;
+    }
+    
+    .contact-phone {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 500;
+      font-size: 1.25rem;
+      color: var(--color-charcoal);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    
+    .contact-phone:hover {
+      color: var(--color-pink);
+    }
+    
+    /* Footer */
+    .footer {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(168, 159, 148, 0.2);
+    }
+    
+    .footer-text {
+      font-size: 0.8125rem;
+      color: var(--color-taupe);
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <!-- Logo Section -->
+    <div class="logo-container">
+      <img src="https://i.imgur.com/YADdMWm.png" alt="XOCHIQUETZALI" class="logo">
+    </div>
+    
+    <!-- Decorative Flower Icon -->
+    <svg class="flower-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 7.5a4.5 4.5 0 1 1 4.5 4.5M12 7.5A4.5 4.5 0 1 0 7.5 12M12 7.5V9m-4.5 3a4.5 4.5 0 1 0 4.5 4.5M7.5 12H9m7.5 0a4.5 4.5 0 1 1-4.5 4.5m4.5-4.5H15m-3 4.5V15"/>
+      <circle cx="12" cy="12" r="3"/>
+      <path d="m8 16 1.5-1.5M16 16l-1.5-1.5M8 8l1.5 1.5M16 8l-1.5 1.5"/>
+    </svg>
+    
+    <!-- Main Heading -->
+    <h1>Gracias por Agendar tu Cita</h1>
+    
+    <!-- Decorative Divider -->
+    <div class="divider">
+      <div class="divider-line"></div>
+      <div class="divider-dot"></div>
+      <div class="divider-line"></div>
+    </div>
+    
+    <!-- Body Content -->
+    <p class="body-text">
+      Hemos recibido tu solicitud con éxito.
+    </p>
+    <p class="body-text">
+      Nuestro equipo se pondrá en contacto contigo muy pronto para confirmar los detalles de tu cita.
+    </p>
+    
+    <!-- Contact Information -->
+    <div class="contact-box">
+      <p class="contact-label">Cualquier duda, contáctanos</p>
+      <a href="tel:+523318625232" class="contact-phone">+52 33 1862 5232</a>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="footer-text">Estética médica natural y segura</p>
+    </footer>
+  </main>
+</body>
+</html>
